@@ -6,7 +6,20 @@
 <title>Topzi: Михаил, программист</title>
 <meta name="description" content="Михаил, он же Topzi. Пишу на C++ и Python, работаю с нейросетями.">
 <meta name="theme-color" content="#ff5b00">
-<link rel="icon" href="https://avatars.githubusercontent.com/u/252743423?v=4">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Topzi: Михаил, программист">
+<meta property="og:description" content="Михаил, он же Topzi. Пишу на C++ и Python, работаю с нейросетями.">
+<meta property="og:url" content="https://topzi-ru.github.io/">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/252743423?v=4">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Topzi: Михаил, программист">
+<meta name="twitter:description" content="Михаил, он же Topzi. Пишу на C++ и Python, работаю с нейросетями.">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/252743423?v=4">
+<link rel="canonical" href="https://topzi-ru.github.io/">
+<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/252743423?v=4">
+<link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/252743423?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Russo+One&display=swap" rel="stylesheet">
@@ -25,6 +38,8 @@ body{background:var(--o);color:var(--k);font:400 1.0625rem/1.6 var(--body);overf
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:3px solid currentColor;outline-offset:3px}
 ::selection{background:var(--k);color:var(--o)}
+.skip{position:absolute;left:1rem;top:-100%;z-index:200;background:var(--g);color:var(--k);padding:.6rem .9rem;border:2px solid var(--k)}
+.skip:focus-visible{top:1rem}
 
 /* loader and progress */
 .ld{position:fixed;inset:0;z-index:100;background:var(--k);color:var(--o);display:flex;align-items:flex-end;padding:1rem 2rem;transition:transform .9s cubic-bezier(.8,0,.2,1)}
@@ -51,6 +66,7 @@ h2{font:400 clamp(1.9rem,4.4vw,3.4rem)/1.05 var(--display);letter-spacing:-.01em
 /* hero */
 .hero{position:relative;overflow:hidden;padding-top:clamp(1.5rem,4vw,3rem)}
 h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(var(--sy),600)*.0001em);margin-left:-.04em;white-space:nowrap;cursor:pointer}
+h1[role="button"]{display:inline-block}
 .l{display:inline-block;line-height:.95;padding:.02em .03em;transition:translate .25s ease-out,scale .25s ease-out;
   animation-name:slam,wob;animation-duration:.7s,3.5s;animation-delay:calc(var(--i)*.09s + .2s),calc(var(--i)*-.7s);
   animation-iteration-count:1,infinite;animation-direction:normal,alternate;animation-fill-mode:both,none;
@@ -158,16 +174,17 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
 </style>
 </head>
 <body>
+<a class="skip" href="#content">Перейти к содержимому</a>
 <div class="ld" aria-hidden="true"><b id="ldn">00</b></div>
 <div class="prog" aria-hidden="true"></div>
 
 <header class="band hero">
   <div class="in">
-    <h1 aria-label="Topzi"><span class="l" style="--i:0" data-p="0" aria-hidden="true">T</span><span class="l" style="--i:1" data-p="1" aria-hidden="true">o</span><span class="l" style="--i:2" data-p="2" aria-hidden="true">p</span><span class="l" style="--i:3" data-p="3" aria-hidden="true">z</span><span class="l" style="--i:4" data-p="4" aria-hidden="true">i</span></h1>
+    <h1 role="button" tabindex="0" aria-label="Topzi, запустить ASCII-анимацию"><span class="l" style="--i:0" data-p="0" aria-hidden="true">T</span><span class="l" style="--i:1" data-p="1" aria-hidden="true">o</span><span class="l" style="--i:2" data-p="2" aria-hidden="true">p</span><span class="l" style="--i:3" data-p="3" aria-hidden="true">z</span><span class="l" style="--i:4" data-p="4" aria-hidden="true">i</span></h1>
     <p class="hex" aria-hidden="true"><span data-p="0" data-h="54">54</span><span data-p="1" data-h="6F">6F</span><span data-p="2" data-h="70">70</span><span data-p="3" data-h="7A">7A</span><span data-p="4" data-h="69">69</span><span class="cap">Topzi в ASCII</span></p>
     <div class="hero-g">
       <div class="phw">
-        <div class="ph"><img src="https://avatars.githubusercontent.com/u/252743423?v=4" alt="Фото Topzi" width="190" height="190"></div>
+        <div class="ph"><img src="https://avatars.githubusercontent.com/u/252743423?v=4" alt="Фото Topzi" width="190" height="190" loading="eager" fetchpriority="high" decoding="async"></div>
         <svg class="badge" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="c" d="M60 60m-42 0a42 42 0 1 1 84 0a42 42 0 1 1-84 0"/></defs><circle cx="60" cy="60" r="60"/><text><textPath href="#c" textLength="262" lengthAdjust="spacing">TOPZI / C++ / PYTHON / KWORK / </textPath></text></svg>
       </div>
       <p class="lead">Михаил. Пишу на C++ и Python, работаю с нейросетями.</p>
@@ -175,6 +192,7 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
   </div>
 </header>
 
+<main id="content">
 <div class="tw" aria-hidden="true">
   <div class="tapes">
     <div class="hz"></div>
@@ -216,9 +234,9 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
   <div class="in g">
     <div><h2>Проекты на GitHub</h2><p class="sub">Всего 7 репозиториев, вот три из них.</p></div>
     <div class="projs">
-      <a class="proj" href="https://github.com/Topzi-RU/steam-detals" target="_blank" rel="noopener"><strong>steam-detals</strong><span>Сайт про Steam.</span><em>HTML</em></a>
-      <a class="proj" href="https://github.com/Topzi-RU/pyraethon" target="_blank" rel="noopener"><strong>pyraethon</strong><span>Веб-проект на HTML.</span><em>HTML</em></a>
-      <a class="proj" href="https://github.com/Topzi-RU/Tool-Kit" target="_blank" rel="noopener"><strong>Tool-Kit</strong><span>Набор утилит для Windows.</span><em>Batchfile</em></a>
+      <a class="proj" href="https://github.com/Topzi-RU/steam-detals" target="_blank" rel="noopener noreferrer"><strong>steam-detals</strong><span>Сайт про Steam.</span><em>HTML</em></a>
+      <a class="proj" href="https://github.com/Topzi-RU/pyraethon" target="_blank" rel="noopener noreferrer"><strong>pyraethon</strong><span>Веб-проект на HTML.</span><em>HTML</em></a>
+      <a class="proj" href="https://github.com/Topzi-RU/Tool-Kit" target="_blank" rel="noopener noreferrer"><strong>Tool-Kit</strong><span>Набор утилит для Windows.</span><em>Batchfile</em></a>
     </div>
   </div>
 </section>
@@ -242,15 +260,32 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
 </section>
 
 <div class="hz" aria-hidden="true"></div>
+</main>
 
 <footer class="band ink">
   <div class="in">
-    <a class="big" href="https://github.com/Topzi-RU" target="_blank" rel="noopener" aria-label="GitHub, Topzi-RU"><strong>GitHub</strong><span>Topzi-RU</span></a>
-    <a class="big" href="https://steamcommunity.com/id/topzi_ru/" target="_blank" rel="noopener" aria-label="Steam, topzi_ru"><strong>Steam</strong><span>topzi_ru</span></a>
+    <a class="big" href="https://github.com/Topzi-RU" target="_blank" rel="me noopener noreferrer" aria-label="GitHub, Topzi-RU"><strong>GitHub</strong><span>Topzi-RU</span></a>
+    <a class="big" href="https://steamcommunity.com/id/topzi_ru/" target="_blank" rel="me noopener noreferrer" aria-label="Steam, topzi_ru"><strong>Steam</strong><span>topzi_ru</span></a>
     <p class="foot mute">© 2026 Topzi</p>
   </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Михаил (Topzi)",
+  "alternateName":"Topzi",
+  "description":"Пишу на C++ и Python, работаю с нейросетями.",
+  "url":"https://topzi-ru.github.io/",
+  "image":"https://avatars.githubusercontent.com/u/252743423?v=4",
+  "knowsAbout":["C++","Python","Нейросети","Roblox"],
+  "sameAs":[
+    "https://github.com/Topzi-RU",
+    "https://steamcommunity.com/id/topzi_ru/"
+  ]
+}
+</script>
 <script>
 (function(){
   var root=document.documentElement, R=matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -258,7 +293,7 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
 
   // split lead into words, contact titles into letters
   var lead=document.querySelector(".lead");
-  lead.innerHTML=lead.textContent.split(" ").map(function(w,i){return '<span style="--i:'+i+'">'+w+'</span>'}).join(" ");
+  if(lead) lead.innerHTML=lead.textContent.split(" ").map(function(w,i){return '<span style="--i:'+i+'">'+w+'</span>'}).join(" ");
   $(".big strong").forEach(function(s){s.innerHTML=s.textContent.split("").map(function(c,i){return '<b style="--i:'+i+'">'+c+'</b>'}).join("")});
 
   // text scramble that resolves left to right
@@ -297,21 +332,38 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
       on(String(i++)); setTimeout(nx,240);
     },1300);
   }
-  document.querySelector("h1").addEventListener("click",function(){if(!R)cycle()});
+  var h1=document.querySelector("h1");
+  function triggerCycle(){if(!R)cycle()}
+  if(h1){
+    h1.addEventListener("click",triggerCycle);
+    h1.addEventListener("keydown",function(e){
+      if(e.key==="Enter" || e.key===" "){
+        e.preventDefault();
+        triggerCycle();
+      }
+    });
+  }
 
   // staggered reveal on scroll
   $(".rows,.spec,.projs").forEach(function(p){[].forEach.call(p.children,function(c,i){c.classList.add("rv");c.style.setProperty("--i",i)})});
   $("h2,.lede,.note,.meter,.sub,.big100").forEach(function(e){e.classList.add("rv");e.dataset.t=e.textContent});
-  var io=new IntersectionObserver(function(en){
-    en.forEach(function(x){
-      if(!x.isIntersecting) return;
-      var e=x.target; io.unobserve(e); e.classList.add("in-v");
-      if(R) return;
-      if(e.tagName==="H2") scr(e,e.dataset.t,"01#/<>?ABCDEF",700,0);
-      [].forEach.call(e.querySelectorAll("[data-to]"),count);
-    });
-  },{threshold:.2});
-  $(".rv").forEach(function(e){io.observe(e)});
+  var reveal=function(e){
+    e.classList.add("in-v");
+    if(R) return;
+    if(e.tagName==="H2") scr(e,e.dataset.t,"01#/<>?ABCDEF",700,0);
+    [].forEach.call(e.querySelectorAll("[data-to]"),count);
+  };
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(x){
+        if(!x.isIntersecting) return;
+        var e=x.target; io.unobserve(e); reveal(e);
+      });
+    },{threshold:.2});
+    $(".rv").forEach(function(e){io.observe(e)});
+  }else{
+    $(".rv").forEach(reveal);
+  }
 
   // scroll progress and parallax variable
   var pg=document.querySelector(".prog");
@@ -324,15 +376,22 @@ h1{font:400 min(26vw,24rem)/1 var(--display);letter-spacing:calc(-.03em + min(va
 
   if(!R){
     // pointer: letters lean toward the cursor, photo tilts
-    var Ls=$(".l"), ph=document.querySelector(".ph");
+    var Ls=$(".l"), ph=document.querySelector(".ph"), pend=null, raf=0;
     addEventListener("pointermove",function(e){
+      pend=e;
+      if(raf) return;
+      raf=requestAnimationFrame(function(){
+        var ev=pend;
+        raf=0;
+        if(!ev) return;
       Ls.forEach(function(l){
-        var r=l.getBoundingClientRect(), dx=e.clientX-(r.left+r.width/2), dy=e.clientY-(r.top+r.height/2),
+        var r=l.getBoundingClientRect(), dx=ev.clientX-(r.left+r.width/2), dy=ev.clientY-(r.top+r.height/2),
             f=Math.max(0,1-Math.hypot(dx,dy)/500);
         l.style.translate=(dx*.06*f)+"px "+(dy*.06*f)+"px";
         l.style.scale=1+f*.12;
       });
-      ph.style.rotate=((e.clientX/innerWidth-.5)*10)+"deg";
+      if(ph) ph.style.rotate=((ev.clientX/innerWidth-.5)*10)+"deg";
+      });
     },{passive:true});
 
     // tapes speed up while scrolling
